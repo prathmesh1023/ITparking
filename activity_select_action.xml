@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".selectAction">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#f1e6c9"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Selectaction"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:padding="20dp">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:layout_marginLeft="80dp"
+            android:text="Username:"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="95dp"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="name"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="75dp"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Number:"/>
+        <TextView
+            android:id="@+id/vehicle"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="95dp"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="vehicle no"/>
+        <Button
+            android:id="@+id/wrong"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonstyle"
+            android:text="wrong parking"
+            android:textColor="#fff"
+            />
+        <Button
+            android:id="@+id/emergency"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Emergency"
+            android:textColor="#fff"
+            />
+        <Button
+            android:id="@+id/fatal"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Fatal Incident"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_marginTop="40dp"
+        android:text="Choose Your Option"
+        android:layout_marginLeft="45dp"
+        />
+    <ImageButton
+        android:id="@+id/logout"
+        android:layout_above="@id/LayoutRegister"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="53dp"
+        android:src="@drawable/ic_power_settings_new_black_24dp"
+        android:background="@drawable/buttonstyle"
+        android:layout_height="53dp" />
+
+</RelativeLayout>

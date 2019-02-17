@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#f1e6c9"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Selectaction"
+        android:layout_width="300dp"
+        android:layout_height="480dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:padding="20dp">
+
+
+        <TextView
+
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="User's Personal Number"/>
+        <Button
+            android:id="@+id/mprimary"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Primary Number"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            />
+        <Button
+            android:id="@+id/msecondary"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Secondary Number"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="User's Emergency Number"/>
+        <Button
+            android:id="@+id/eprimary"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Primary Number"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            />
+        <Button
+            android:id="@+id/esecondary"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Secondary Number"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="User's Address"/>
+        <Button
+            android:id="@+id/user_address"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Change Address"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="User's Profile photo"/>
+        <Button
+            android:id="@+id/upload"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Upload or Change profile photo"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:textColor="#fff"
+    android:layout_marginTop="10dp"
+    android:text="Update information"
+    android:layout_marginLeft="45dp"
+    />
+
+    <!--<Spinner-->
+        <!--android:id="@+id/choice"-->
+        <!--android:background="#fff48f" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/value"-->
+        <!--android:background="#fff48f"-->
+        <!--android:hint="Value" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/update"-->
+        <!--android:background="@drawable/buttonstyle"-->
+        <!--android:text="Update"-->
+        <!--android:textColor="#ffffff" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:text="Update"-->
+        <!--android:textColor="#da510c"-->
+        <!--android:textSize="45dp"-->
+        <!--android:textStyle="bold" />-->
+
+
+</RelativeLayout>

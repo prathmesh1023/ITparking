@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#f1e6c9"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Selectaction"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Previous value"/>
+
+        <EditText
+            android:id="@+id/old"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter New value"/>
+
+        <EditText
+            android:id="@+id/new_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Status :"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Unknown"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_marginTop="30dp"
+        android:text="Update action"
+        android:layout_marginLeft="45dp"
+        />
+
+</RelativeLayout>

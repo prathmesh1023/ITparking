@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataInput">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:background="#f1e6c9">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="#f1e6c9"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LayoutRegister"
+            android:background="@drawable/buttonstyle"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="10dp"
+            android:text="Register"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutRegister"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="User name"
+        android:drawableRight="@drawable/ic_person_black_24dp"
+        android:inputType="textPersonName" />
+
+
+
+    <EditText
+        android:id="@+id/upassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:drawableRight="@drawable/ic_vpn_key_black_24dp"
+        android:inputType="textPassword" />
+
+
+
+    <EditText
+        android:id="@+id/mprimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Whatsapp no"
+        android:drawableRight="@drawable/ic_whatsapp_logo_3"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/msecondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_phone_android_black_24dp"
+        android:ems="10"
+        android:hint="Secondary no."
+        android:inputType="phone" />
+
+
+
+    <EditText
+        android:id="@+id/eprimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="emergency number"
+        android:drawableRight="@drawable/ic_contact_phone_black_24dp"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:id="@+id/esecondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="second emergency no."
+        android:drawableRight="@drawable/ic_local_phone_black_24dp"
+        android:inputType="phone" />
+        <EditText
+            android:id="@+id/vehicleno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_directions_car_black_24dp"
+            android:ems="10"
+            android:hint="vehicle no."
+            android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/user_address"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="User's address"
+        android:drawableRight="@drawable/ic_home_black_24dp"
+        android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:layout_above="@id/LayoutRegister"
+        android:text="Register User"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
